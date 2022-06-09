@@ -7,6 +7,9 @@ https://stackoverflow.com/questions/68775869/support-for-password-authentication
 ## VSCode setup
 Material Icon Theme
 
+## Vim
+VimPlug, .vimrc in the repo
+
 ## Firefox setup
 [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
 
