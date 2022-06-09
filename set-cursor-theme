@@ -1,0 +1,18 @@
+#!/bin/bash
+
+replace_kv() {
+	sed -i "s/^${1}.*/${1}${2}/g" "${3}"
+}
+
+if [ "$#" -ne 2 ]; then
+    echo "Change user's cursors."
+	echo "Usage: set-cursor-theme cursor_theme size"
+	exit
+fi
+
+
+replace_kv "Xcursor.theme:" " ${1}" ~/.Xresources
+replace_kv "Xcursor.size:" " ${2}" ~/.Xresources
+
+replace_kv "gtk-cursor-theme-name=" "${1}" ~/.config/gtk-3.0/settings.ini
+replace_kv "gtk-cursor-theme-size=" "${2}" ~/.config/gtk-3.0/settings.ini
