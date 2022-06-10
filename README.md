@@ -6,6 +6,7 @@ https://stackoverflow.com/questions/68775869/support-for-password-authentication
 
 ## Desktop environment
 dwm, [custom build](https://github.com/ColumbusUtrigas/dwm)
+
 picom, config in the repo
 
 ## VSCode setup
