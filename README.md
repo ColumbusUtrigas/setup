@@ -22,3 +22,11 @@ Alacritty, config in the repo
 [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
 
 [Remove tabs on top](https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b)
+
+Start with MOZ_USE_XINPUT2=1 to have proper touchpad support.
+
+Settings in about:config:
+- apz.overscroll = true
+	- page delta factor = 0.3
+	- pixel delta factor = 10
+	- fling friction = 0.007
