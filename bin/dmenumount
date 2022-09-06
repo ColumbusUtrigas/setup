@@ -1,0 +1,7 @@
+#!/bin/sh
+
+selected=$(simple-mtpfs -l | dmenu | cut --d : --f 1)
+
+if [ ! -z $selected ]; then
+	echo 'found'
+fi
