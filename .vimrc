@@ -1,8 +1,13 @@
+set runtimepath=$XDG_CONFIG_HOME/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$XDG_CONFIG_HOME/after
+set packpath=$XDG_CONFIG_HOME/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$XDG_CONFIG_HOME/after
+
+set viminfo+='1000,n$XDG_CONFIG_HOME/vim/viminfo
+
 " Set this to 1 to use ultisnips for snippet handling
 let s:using_snippets = 0
 
 " vim-plug: {{{
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 
 Plug 'preservim/nerdtree'
 Plug 'OmniSharp/omnisharp-vim'
